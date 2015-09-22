@@ -1,2 +1,2 @@
 # project-specific-location-tools
-Mostly useless outside of a very specific project I'm working on. 
+This is a collection of functions that I can use in a modified copy of a pre-existing app to do a bit of basic frequency analysis on some locations.
