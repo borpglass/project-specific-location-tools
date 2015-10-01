@@ -4,7 +4,7 @@ ini_set("display_errors","1");
 error_reporting(E_ALL);
 $noticechecker .= " ";
 
-//This project is being built for the purpose of building and iterating through a local grid.
+//This class is being whacked together for the purpose of building and iterating through a local grid.
 //The goal is to establish the grid point that has the highest density of an item within a defined radius.
 //A lot of this will probably eventually be broken out into other places, of course.
 
@@ -31,7 +31,7 @@ class BaltGeoTools{
         print("\n This is a stub of a method that will create and return a two-dimensional array of roughly-block-sized points from across a region. \n");
         $latinc = ($this->latmile/5280) * $feetperblock;
         $loninc = ($this->lonmile/5280) * $feetperblock;
-        $coords = array();
+        $this->coords = array();
         for($lat = $startlat; $lat > $endlat; $lat -= $latinc){
                 for($lon = $startlon; $lon < $endlon; $lon += $loninc){
                         $coords[] = array('lat'=>$lat,'lon'=>$lon);
@@ -43,6 +43,14 @@ class BaltGeoTools{
  }
  public function getCounts(){
         print("\n This is a stub of a method that will iterate through each grid point, calculating the number of items within a block. \n");
+        $testdata = array(
+                                array('lat'=>'39.37741','lon'=>'-76.60412'),
+                                array('lat'=>'39.37742','lon'=>'-76.60413'),
+                                array('lat'=>'39.37743','lon'=>'-76.60412'),
+                                array('lat'=>'39.37741','lon'=>'-76.60413'),
+                                array('lat'=>'39.257417','lon'=>'-76.50412')
+                        );
+        TIWIS
  }
 }
 
